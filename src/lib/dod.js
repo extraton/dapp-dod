@@ -20,7 +20,7 @@ export default {
     const signer = await provider.getSigner();
     const wallet = signer.getWallet();
     const payload = (await ton.encodeMessageBody(abi, 'sign')).body;
-    const contractMessageProcessing = await wallet.transfer(_.address, '1100000000', true, payload);
+    const contractMessageProcessing = await wallet.transfer(_.address, '1000000000', true, payload);
     await contractMessageProcessing.wait();
   },
   async isSigned(signatures) {

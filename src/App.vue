@@ -4,7 +4,7 @@
     <div>
       <v-app-bar>
         <v-icon left>mdi-diamond-stone</v-icon>
-        <v-toolbar-title>extraTON.Dod</v-toolbar-title>
+        <v-toolbar-title>extraTON.DoD</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn href="https://t.me/extraton" target="_blank" text outlined>
           <v-icon left>mdi-telegram</v-icon>
