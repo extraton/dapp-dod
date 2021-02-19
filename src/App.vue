@@ -1,28 +1,12 @@
 <template>
   <v-app>
     <v-snackbar v-model="snack.isShow">{{ snack.text }}</v-snackbar>
-    <div>
-      <v-app-bar>
-        <v-icon left>mdi-diamond-stone</v-icon>
-        <v-toolbar-title>extraTON.DoD</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn href="https://t.me/extraton" target="_blank" text outlined>
-          <v-icon left>mdi-telegram</v-icon>
-          <span>Support</span>
-        </v-btn>
-        <template v-slot:extension>
-          <v-tabs align-with-title>
-            <v-tabs-slider color="#272727"/>
-            <v-tab :to="{name: 'main'}" exact>Home</v-tab>
-            <v-tab :to="{name: 'about'}">About</v-tab>
-          </v-tabs>
-        </template>
-      </v-app-bar>
-    </div>
-
-    <div class="content">
-      <router-view :search="search"/>
-    </div>
+    <v-container>
+      <v-alert type="error">
+        Project Closed!
+        <br/>See details in official <a href="https://extraton.io" target="_blank">site</a>.
+      </v-alert>
+    </v-container>
   </v-app>
 </template>
 
