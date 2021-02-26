@@ -1,10 +1,12 @@
 import {TonClient} from "@tonclient/core";
-import {libWeb} from "@tonclient/lib-web";
+import {libWeb, libWebSetup} from "@tonclient/lib-web";
 import semver from "semver";
 import freeton from "freeton";
 
 TonClient.useBinaryLibrary(libWeb);
-
+libWebSetup({
+  binaryURL: "/tonclient_1.4.1.wasm",
+});
 const _ = {
   client: null,
   provider: null,
