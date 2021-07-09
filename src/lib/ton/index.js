@@ -15,7 +15,7 @@ const _ = {
     if (null === this.client ) {
       this.client = new TonClient({
         network: {
-          server_address: 'main.ton.dev'
+          server_address: 'main2.ton.dev'
         }
       });
     }
